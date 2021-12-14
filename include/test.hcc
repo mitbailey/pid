@@ -1,0 +1,28 @@
+/**
+ * @file test.hcc
+ * @author Mit Bailey (mitbailey99@gmail.com)
+ * @brief
+ * @version See Git tags for version information.
+ * @date 2021.12.14
+ *
+ * @copyright Copyright (c) 2021
+ *
+ */
+
+#define SUPPRESS_PRINTS
+#define LEEWAY 0.0001
+
+namespace test
+{
+    int direct();
+
+    int constant_offset();
+
+    int constant_multiple();
+
+    int constant_multiple_large();
+
+    int increasing_offset();
+
+    int increasing_multiple();
+}

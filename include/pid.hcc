@@ -1,0 +1,24 @@
+/**
+ * @file pid.hcc
+ * @author Mit Bailey (mitbailey99@gmail.com)
+ * @brief 
+ * @version See Git tags for version information.
+ * @date 2021.12.14
+ * 
+ * @copyright Copyright (c) 2021
+ * 
+ */
+
+#define CYCLE_TIME 0.005
+
+/**
+ * @brief
+ *
+ * @param setpoint Desired value.
+ * @param[in] pv Process variable, the actual real current value.
+ * @param[in] Kp Proportional gain (optional, 0 by default).
+ * @param[in] Ki Integral action (optional, 0 by default).
+ * @param[in] Kd Derivative action (optional, 0 by default).
+ * @return float Calculated change in commanded value.
+ */
+float PIDController(float setpoint, float pv, float Kp, float Ki, float Kd);

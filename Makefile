@@ -1,5 +1,5 @@
 CXX = g++
-CPPOBJS = src/main.o
+CPPOBJS = src/main.o src/pid.cc src/test.cc
 EDCXXFLAGS = -I ./ -I ./include/ -Wall -pthread $(CXXFLAGS)
 EDLDFLAGS := -lpthread -lm $(LDFLAGS)
 TARGET = pid.out
